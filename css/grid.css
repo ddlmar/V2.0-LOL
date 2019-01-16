@@ -1,0 +1,31 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+
+}
+
+.container:after, .container:before {
+	content: "";
+	display: table;
+	margin: 0 auto;
+}
+
+.container:after {
+	clear: both;
+}
+
+.container-into {
+	width: 1050px;
+	margin: 0 auto;
+}
+
+.col-left {
+	float: left;
+	width: 525px;
+
+}
+
+.col-right {
+	float: left;
+	width: 525px;
+}

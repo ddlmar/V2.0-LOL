@@ -1,0 +1,47 @@
+body {
+	background: black;
+}
+
+.header {
+	height: 100px;
+	background: #124C4C;
+	
+}
+
+.logo a {
+	position: relative;
+}
+
+.logo img{
+	width: 300px;
+	
+}
+
+
+.social-header {
+	text-align: right;
+	
+}
+
+.social-header a{
+	position: relative;
+	color: white;
+	margin-left: 10px;
+	top: 5px;
+	
+}
+
+.search-header{
+	text-align: right;	
+
+}
+
+.search-header a{
+	position: relative;
+	color: white;
+	font-size: 30px;
+	top: 19px;
+}
+
+
+
