@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-	height: 100px;
+	height: auto;
 	background: #124C4C;
 	
 }
@@ -26,9 +26,10 @@ body {
 .social-header a{
 	position: relative;
 	color: white;
-	margin-left: 10px;
+	font-size: 15px;
+	margin-left: 15px;
 	top: 5px;
-	
+	right: 5px;
 }
 
 .search-header{
@@ -39,9 +40,66 @@ body {
 .search-header a{
 	position: relative;
 	color: white;
-	font-size: 30px;
+	font-size: 20px;
 	top: 19px;
 }
 
+.menu {
+	height: 50px;
+	background: white;
+	text-align: center;
+}
 
+.menu .btn {
+	display: inline-block;
+	text-align: center;
+	color: black;
+	font-size: 17px;
+	margin-top: 15px;
+	width: 194.4px;
+	font-family: 'Roboto', sans-serif;
+}
 
+.menu li {
+	
+}
+
+.body{
+	border: 1px solid black;
+	z-index: 0;
+}
+
+.promo {
+	width: 1200px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.img {
+	width: 1200px;
+	height: 400px;
+	position: absolute;
+	opacity: 0;
+	animation-name: anima;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anima{
+	25%{
+		opacity: 1;
+		transform: scale();
+	}
+	50%{
+		opacity: 1;
+		
+	}
+}
+
+.img:nth-child(1) {
+	
+}
+.img:nth-child(2) {
+	animation-delay: 5s;	
+}
