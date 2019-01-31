@@ -4,7 +4,7 @@ body {
 
 .header {
 	height: auto;
-	background: #124C4C;
+	background: #00b894;
 	
 }
 
@@ -17,7 +17,11 @@ body {
 	
 }
 
-
+.search-box{
+	width: 40px;
+	height: 40px;
+	background: #636e72;
+}
 .social-header {
 	text-align: right;
 	
@@ -117,21 +121,21 @@ body {
 	
 }
 .news{
-	height:	250px;
+	height:	auto;
 	border: 1px solid black;
 	border-radius: 5px;
 	overflow: hidden;
 }
 
 .nfield .news{
-	
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .news .title{
 	height: auto;
 	background: black;
-	border-radius: 5px;
+	border-radius: 3px;
 	
 }
 
@@ -140,30 +144,61 @@ body {
 	font-size: 24px;
 }
 
-
-
-.thumbnail {
+.inews {
+	height: 215px;
+	overflow: hidden;
+	display: block;
 	position: relative;
-	width: 300px;
-	top: 10px;
-	left: 10px;
-	float: left;
-
-
+	top: 15px;
+	right: 15px;
+	left: 15px;
+	display: inline-block; 
 }
 
-.thumbnail img {
-	width: 300px;
-	height: 168px;
-	border: 5px solid black;
-
-}
-
-.news .note {
+.thumb {
 	position: relative;
-	top: 10px;
-	left: 25px;
 	
+	width: 330px;
+	float: left;
 }
+
+.thumb img {
+	border: 10px solid black;
+}
+
+.note {
+	width: 1030px;
+}
+
+.note a {
+	position: absolute;
+	top: 60px;
+	background: black;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+footer {
+	background: white;
+}
+
+.footer {
+	height: 200px;
+	border-top: 1px solid black;
+
+}
+
+.footer img {
+	margin-top: 41px;
+	float: right;
+	background: black;
+	border-radius: 52px;
+}
+
+
+
+
 
 
