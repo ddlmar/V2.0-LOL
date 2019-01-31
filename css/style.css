@@ -4,7 +4,7 @@ body {
 
 .header {
 	height: auto;
-	background: #00b894;
+	background: #222f3e;
 	
 }
 
@@ -18,36 +18,50 @@ body {
 }
 
 .search-box{
+	position: absolute;
+	transform: translate(300px, 31px);
+	height: 40px;
+	background: #10ac84;
+	border-radius: 40px;
+	padding: 10px;
+	z-index: 10000;
+}
+
+.search-box:hover > .search-txt{
+	width: 150px;
+	padding: 0 6px;
+
+}
+
+.search-box:hover > .search-btn{
+	background: white;
+}
+
+.search-btn {
+
+	color: #222f3e;
+	float: right;
 	width: 40px;
 	height: 40px;
-	background: #636e72;
-}
-.social-header {
-	text-align: right;
-	
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
 }
 
-.social-header a{
-	position: relative;
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
 	color: white;
-	font-size: 15px;
-	margin-left: 15px;
-	top: 5px;
-	right: 5px;
+	font-size: 16px;
+	line-height: 40px;
+	width: 0px;
+	transition: 0.5s;
 }
-
-.search-header{
-	text-align: right;	
-
-}
-
-.search-header a{
-	position: relative;
-	color: white;
-	font-size: 20px;
-	top: 19px;
-}
-
 .menu {
 	height: 50px;
 	background: white;
@@ -62,11 +76,10 @@ body {
 	margin-top: 15px;
 	width: 194.4px;
 	font-family: 'Roboto', sans-serif;
+
 }
 
-.menu li {
-	
-}
+
 
 .body{
 	border: 1px solid black;
@@ -134,12 +147,13 @@ body {
 
 .news .title{
 	height: auto;
-	background: black;
+	background: #222f3e;
 	border-radius: 3px;
 	
 }
 
 .news .title p {
+	margin-left: 15px;
 	color: white;
 	font-size: 24px;
 }
@@ -157,7 +171,6 @@ body {
 
 .thumb {
 	position: relative;
-	
 	width: 330px;
 	float: left;
 }
@@ -178,6 +191,10 @@ body {
 	padding: 5px 20px;
 	border: 1px solid black;
 	border-radius: 20px;
+	transition: 0.5s;
+}
+.note a:hover {
+	background: #10ac84;
 }
 
 footer {
