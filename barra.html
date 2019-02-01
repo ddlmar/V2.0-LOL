@@ -15,8 +15,9 @@
 		.search-box{
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			transform: translate(-50% , -50%);
+			right: 50%;
+
+			transform: translate(200px , -50%);
 			background: #34495e;
 			height: 40px;
 			border-radius: 40px;
@@ -54,6 +55,42 @@
 			line-height: 40px;
 			width: 0px;
 		}
+		.leque-box {
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -30%);
+			width: 120px;
+			height: 40px;
+			border-radius: 40px;
+			background: #34495e;
+		}
+		.leque-btn {
+			width: 120px;
+			height: 40px;
+			font-size: 14px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #2980b9;
+			text-transform: uppercase;
+		}
+		.leque-txt {
+			position: absolute;
+			opacity: 0;
+			border:1px solid black;
+			border-top: none;
+			border-radius: 20px;
+			background: none;
+			bottom: 0px;
+			transition: .6s;
+			height: 0px;
+			width: 100px;
+		}
+		.leque-box:hover > .leque-txt{
+			height: 74px;
+			opacity: 1;
+		}
 	</style>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
@@ -63,6 +100,15 @@
 		<a class="search-btn" href="">
 			<i class="fas fa-search"></i>
 		</a>
+	</div>
+	<div class="leque-box">
+		<a class="leque-btn" href="#">passe o mouse
+			<ul class="leque-txt">
+				<a href="">loja</a>
+				<a href="">sobre</a>
+			</ul>	
+		</a>
+		
 	</div>
 
 
